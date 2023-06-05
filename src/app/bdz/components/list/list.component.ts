@@ -14,11 +14,11 @@ export class ListComponent {
   }];
 
   @Output()
-  public onDelete: EventEmitter<number> = new EventEmitter<number>();
+  public onDelete: EventEmitter<string> = new EventEmitter<string>();
 
-  onDeleteCharater(index: number):void {
-    console.log(index);
+  onDeleteCharater(id?: string):void {
+    if (!id) return;
 
-    this.onDelete.emit(index);
+    this.onDelete.emit(id);
   }
 }
