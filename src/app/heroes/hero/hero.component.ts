@@ -29,8 +29,8 @@ export class HeroComponent {
     this.name = 'Ironman';
     this.age = 45;
 
-    document.querySelectorAll('h1')!.forEach(element => {
-      element.innerHTML = '<h1>Desde Angular</h1>';
-    })
+    // document.querySelectorAll('h1')!.forEach(element => {
+    //   element.innerHTML = '<h1>Desde Angular</h1>';
+    // })
   }
 }
